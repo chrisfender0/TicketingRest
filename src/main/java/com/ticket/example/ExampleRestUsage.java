@@ -1,6 +1,8 @@
 package com.ticket.example;
 
+import java.util.Collections;
 import java.util.Date;
+import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
@@ -28,6 +30,10 @@ public class ExampleRestUsage {
 		t.setPriority("High");
 		t.setDateCreated(new Date());
 		return t;
+	}
+	
+	public static Map<String, String> answerTest() {
+		return Collections.singletonMap("response", "Test received");
 	}
 
 }
